@@ -1,0 +1,31 @@
+.article-content {
+  width: 80%;
+  height: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  overflow: hidden;
+  color: black;
+}
+
+.article-content h2 {
+  margin: 1.5rem;
+  font-size: 2.1rem;
+}
+
+.article-content img {
+  opacity: 0.2;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.article-content.s-1-bg {
+  background-color: #bcdba0;
+}
+
+.article-content.s-2-bg {
+  background-color: #e0c39d;
+}
+
+.article-content.s-3-bg {
+  background-color: lightblue;
+}

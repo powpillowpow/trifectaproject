@@ -1,0 +1,85 @@
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.article a {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+  padding: 1.5rem;
+  border-radius: 0.2rem;
+  transition: 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1094px) {
+  .article a {
+    width: 42%;
+  }
+}
+
+@media only screen and (max-width: 1094px) {
+  .article a {
+    width: 100%;
+  }
+}
+
+.article a:hover {
+  box-shadow: 4px 4px 4px lightgrey;
+}
+
+.article a h2 {
+  color: black;
+  margin-top: 1rem;
+}
+
+.article a p {
+  margin-top: 1rem;
+}
+
+.article a img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.18;
+  filter: grayscale(60%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
+}
+
+
+input[type='search'] {
+  border: none;
+  border-radius: 0.2rem;
+  width: 15rem;
+  height: 2rem;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  outline: none;
+  transition: 0.2s ease-in;
+  margin-left: 1rem;
+  background-color: lightgrey;
+}
+
+input[type='search']:hover, input[type='submit']:hover {
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: lightblue;
+  border: none;
+  border-radius: 0.2rem;
+  width: 4rem;
+  height: 2rem;
+}

@@ -1,0 +1,95 @@
+main {
+  width: 55rem;
+  height: 55rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.trifecta-logo {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: space-between;
+  transition: ease-in 0.5s;
+}
+
+.trifecta-logo .line {
+  background-color: #979797;
+  width: 0.8rem;
+  height: 100%;
+}
+
+.sides {
+  display: flex;
+  justify-content: space-between;
+}
+
+.up, .bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(50% - 4rem);
+}
+
+.option {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+}
+
+.option.left {
+  transform: rotate(-90deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.option.left:hover {
+  margin-left: 2rem;
+}
+
+.option.right:hover {
+  margin-right: 2rem;
+}
+
+.option.right {
+  transform: rotate(90deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 4rem;
+}
+
+.option.left .line-small, .option.up .line-small, .option.bottom .line-small , .option.right .line-small{
+  margin-bottom: 2rem;
+}
+
+.option.up {
+  margin-top: 4rem;
+  transition: ease-in 0.5s;
+}
+
+.option.bottom:hover {
+  color: red;
+}
+
+.option.up:hover {
+  color: blue;
+}
+
+.option.bottom {
+  margin-bottom: 4rem;
+  transition: ease-in 0.5s;
+}
